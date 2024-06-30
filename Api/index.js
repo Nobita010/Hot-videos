@@ -3,8 +3,12 @@ const express = require('express');
 const app = express();
 
 const videoUrls = [
-  "https://i.imgur.com/nhs8YG7.mp4",
-  "https://i.imgur.com/d4iHDG4.mp4"
+  "https://i.imgur.com/IO1ylzD.mp4",
+  "https://i.imgur.com/31ZhjGi.mp4",
+  "https://i.imgur.com/YADNv1J.mp4" ,
+  "https://i.imgur.com/vNM1tlp.mp4" ,
+  "https://i.imgur.com/CQN5MUV.mp4" ,
+  "https://i.imgur.com/GRXMtMC.mp4"
 ];
 
 app.get('/videos', (req, res) => {
