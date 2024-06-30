@@ -1,10 +1,14 @@
 const express = require('express');
 const app = express();
+const cors = require('cors'); // Add CORS middleware
 
 const videoUrls = [
   "https://i.imgur.com/nhs8YG7.mp4",
   "https://i.imgur.com/d4iHDG4.mp4"
 ];
+
+// Enable CORS for all origins
+app.use(cors()); 
 
 // Middleware for welcome message on root URL
 app.use('/', (req, res, next) => {
